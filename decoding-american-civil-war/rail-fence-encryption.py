@@ -25,7 +25,7 @@ def prep_plaintext(text:str):
     return message
 
 def build_rails(message):
-    """build rails by selectively picking alternate letterse"""
+    """build rails by selectively picking alternate letters"""
     even  = message[::2]
     odd = message[1::2]
     rails = even + odd
@@ -47,3 +47,5 @@ def main():
 
 if __name__ == '__main__':
    main()
+
+#final output = LTSRS OETEI EADET NETEH DOTER EEUCO SVRHR VRNRS UDRHS AEFHT ES
