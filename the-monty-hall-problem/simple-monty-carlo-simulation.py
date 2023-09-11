@@ -20,6 +20,14 @@ import math
 def unique_number_mcs(trials:int):
     '''takes the number of trials and the number of unique digits as a parameter and returns
         the probablity of the unique digits across different throws
+
+    Steps to replicate:
+    1. define the input variables (in this case trials)
+    2. define the probablity distribution of each variable (in this case the distribution is uniform)
+    3. define what will be counted as an successful experiment
+    4. create the experiment with the similar probablity distribution of each variable as defined in step 2
+    5. replicate the experiment and iterate over the number of times you want to run the experiment
+    6. count the total successes and calculate the probablity on the base of number of trials and number of successes
     '''
     success = 0
     for trial in range(trials):
@@ -34,6 +42,7 @@ def unique_number_mcs(trials:int):
     return final_probablity
 
 def mp_unqiue_number():
+    '''Computes the mathematical result of the simulation that is being attempted'''
     return math.factorial(6)/math.pow(6,6)
 
 def main():
@@ -43,3 +52,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+'''Simulation result will be close to the mathematical proof as the number of trials are increased. Since the calculations are computationally
+expensive, we need to maintain vouch the trade of accuracy vs efficiency.
+'''
