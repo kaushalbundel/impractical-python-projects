@@ -14,7 +14,7 @@ Marilyn vos Savant prepositioned that the best option is to switch the door.
 import random
 
 def monty_hall_solution(trials:int):
-    doors = ['A', 'B', 'C']     #signifying the three doors A, B and C
+    doors = ['A', 'B', 'C']  # signifying the three doors A, B and C
     success = 0
     for trial in range(trials):
         winner = random.choice(doors)
